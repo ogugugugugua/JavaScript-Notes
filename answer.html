@@ -15,7 +15,18 @@ num1 = parseFloat(num1);
 num2 = parseFloat(num2);
 var result = num1+num2;
 document.getElementById("result").value=result;
- 
+}
+
+
+function f() {
+var number1 = document.getElementById("number1").value;
+var number2 = document.getElementById("number2").value;
+var number3 = document.getElementById("number3").value;
+number1 = parseFloat(number1);
+number2 = parseFloat(number2);
+number3 = parseFloat(number3);
+var result1 = number1*number2*number3;
+document.getElementById("result1").value = result1;
 }
 </script>
 <input type="text" id="num1"> +
@@ -25,3 +36,10 @@ document.getElementById("result").value=result;
 <input type="text" id="result" >
  
 <input type="button" value="ÔËËã" onclick="calc()">
+<br><br>
+
+<input type="text" id="number1"> * <input type="text" id="number2"> * <input type="text" id="number3">
+=
+<input type="text" id="result1">
+
+<input type="button" size="10,10" value="Multiplication" onclick="f()">
