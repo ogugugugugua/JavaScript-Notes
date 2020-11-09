@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 边框的CSS */
+        .fa{    
+            width: 400px;
+            margin-bottom: 30px;
+            border: 1px solid black;
+        }
+        /* 内部进度条的CSS */
+        .son{
+            width: 0px;
+            height: 40px;
+            background-color: greenyellow;
+            text-align: center;
+            line-height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 外部的边框 -->
+    <div class="fa">
+        <!-- 内层的进度条 -->
+        <div class="son">
+            <!-- 进度条里显示的百分比参数 -->
+            <span>0</span><span>%</span>
+        </div>
+    </div>
+    <!-- 按钮 -->
+    <button id="button">install</button>
+    <script src="progress.js"></script>
+</body>
+</html>
